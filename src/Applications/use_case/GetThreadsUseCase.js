@@ -35,7 +35,6 @@ class GetThreadsUseCase {
         comments[i].owner
       );
       const newReplies = await this._newReplies(comments[i].id);
-
       comments[i].username = owner;
       comments[i].replies = newReplies;
     }
